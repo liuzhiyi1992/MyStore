@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>[ zhiyi 的 空间 ]</title>
+        <link>http://zyden.vicp.cc</link>
+        <description>记录个人开发过程中遇到的问题和有趣的事物，总结经验，静候大家批评</description>
+        <generator>Ghost v0.7.4 full</generator>
+        <lastBuildDate>20 Jan 2016</lastBuildDate>
+        <atom:link href="http://zyden.vicp.cc/rss/" rel="self" type="application/rss+xml" />
+        <ttl>60</ttl>
+        <item>
+            <title>[ 如何打造一个让人愉快的框架 ]</title>
+            <description>这里是描述啊</description>
+            <link>http://zyden.vicp.cc</link>
+        </item>
+    </channel>
+</rss>
