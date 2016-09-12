@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BusinessOrderConfirmBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTK-hQ-lKy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="105"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n4W-ga-vee" customClass="UIBlueRoundFillButton">
+                            <rect key="frame" x="25" y="45" width="270" height="45"/>
+                            <color key="backgroundColor" red="0.35686274509999999" green="0.45098039220000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="325" id="Tt5-VD-lhe"/>
+                                <constraint firstAttribute="height" constant="45" id="X1m-YY-gUX"/>
+                            </constraints>
+                            <state key="normal" title="提交订单">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="Tt5-VD-lhe"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <action selector="clickSubmitButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="pbS-5g-Hdz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="需支付金额：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uaX-9f-fdr">
+                            <rect key="frame" x="20" y="15" width="84" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="费用明细" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="43n-LL-3ke">
+                            <rect key="frame" x="218" y="9" width="56" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_up_black.png" translatesAutoresizingMaskIntoConstraints="NO" id="aiW-kS-k1C">
+                            <rect key="frame" x="284" y="21" width="11" height="6"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="11" id="UJC-JJ-T07"/>
+                                <constraint firstAttribute="height" constant="6" id="VCm-51-OEu"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lKp-a1-6Ta">
+                            <rect key="frame" x="218" y="9" width="92" height="30"/>
+                            <connections>
+                                <action selector="clickExpandPriceDetail:" destination="iN0-l3-epB" eventType="touchUpInside" id="gIq-zV-Lvt"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbh-JM-kEB">
+                            <rect key="frame" x="104" y="15" width="23" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.35686275360000003" green="0.45098039509999999" blue="0.94901961089999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="aiW-kS-k1C" secondAttribute="trailing" constant="25" id="0TL-xv-ZdE"/>
+                        <constraint firstItem="n4W-ga-vee" firstAttribute="leading" secondItem="KTK-hQ-lKy" secondAttribute="leading" constant="25" id="12T-t5-Tgb"/>
+                        <constraint firstItem="lKp-a1-6Ta" firstAttribute="top" secondItem="43n-LL-3ke" secondAttribute="top" id="5eT-tB-fOO"/>
+                        <constraint firstItem="n4W-ga-vee" firstAttribute="centerX" secondItem="KTK-hQ-lKy" secondAttribute="centerX" id="6WG-VR-m7E"/>
+                        <constraint firstAttribute="height" constant="105" id="7Wf-7S-2Se"/>
+                        <constraint firstItem="lKp-a1-6Ta" firstAttribute="trailing" secondItem="aiW-kS-k1C" secondAttribute="trailing" constant="15" id="CZy-MI-YXb"/>
+                        <constraint firstItem="aiW-kS-k1C" firstAttribute="centerY" secondItem="nbh-JM-kEB" secondAttribute="centerY" id="MXi-61-uso"/>
+                        <constraint firstItem="nbh-JM-kEB" firstAttribute="leading" secondItem="uaX-9f-fdr" secondAttribute="trailing" id="Tkx-oA-zhT"/>
+                        <constraint firstItem="aiW-kS-k1C" firstAttribute="leading" secondItem="43n-LL-3ke" secondAttribute="trailing" constant="10" id="Ts9-Ov-Vyr"/>
+                        <constraint firstItem="43n-LL-3ke" firstAttribute="centerY" secondItem="aiW-kS-k1C" secondAttribute="centerY" id="VGc-Pj-dVL"/>
+                        <constraint firstItem="uaX-9f-fdr" firstAttribute="top" secondItem="KTK-hQ-lKy" secondAttribute="top" constant="15" id="Xex-Kl-6yE"/>
+                        <constraint firstAttribute="bottom" secondItem="n4W-ga-vee" secondAttribute="bottom" constant="15" id="jhV-vk-Ru3"/>
+                        <constraint firstItem="nbh-JM-kEB" firstAttribute="centerY" secondItem="uaX-9f-fdr" secondAttribute="centerY" id="o5j-pM-efA"/>
+                        <constraint firstItem="uaX-9f-fdr" firstAttribute="leading" secondItem="KTK-hQ-lKy" secondAttribute="leading" constant="20" id="rls-kb-LXt"/>
+                        <constraint firstItem="lKp-a1-6Ta" firstAttribute="leading" secondItem="43n-LL-3ke" secondAttribute="leading" id="sVt-ON-KIM"/>
+                        <constraint firstItem="lKp-a1-6Ta" firstAttribute="bottom" secondItem="43n-LL-3ke" secondAttribute="bottom" id="uaQ-rX-K9b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="KTK-hQ-lKy" secondAttribute="trailing" id="OQE-Jh-ETc"/>
+                <constraint firstItem="KTK-hQ-lKy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="irE-hq-6e1"/>
+                <constraint firstAttribute="bottom" secondItem="KTK-hQ-lKy" secondAttribute="bottom" id="pBE-Wj-upn"/>
+                <constraint firstItem="KTK-hQ-lKy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sVy-Ye-Rmn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="arrowImageView" destination="aiW-kS-k1C" id="1Yq-bw-9wG"/>
+                <outlet property="needPayPriceLabel" destination="nbh-JM-kEB" id="axP-fg-lCn"/>
+                <outlet property="submitHolderViewHeight" destination="7Wf-7S-2Se" id="4Qh-Qo-VXA"/>
+                <outletCollection property="detailPriceHolderView" destination="nbh-JM-kEB" id="HOL-M8-VxV"/>
+                <outletCollection property="detailPriceHolderView" destination="uaX-9f-fdr" id="q7u-lx-C6o"/>
+                <outletCollection property="detailPriceHolderView" destination="43n-LL-3ke" id="wdo-8S-Pn8"/>
+                <outletCollection property="detailPriceHolderView" destination="aiW-kS-k1C" id="oEQ-w8-A35"/>
+                <outletCollection property="detailPriceHolderView" destination="lKp-a1-6Ta" id="TWR-XA-555"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow_up_black.png" width="11" height="6"/>
+    </resources>
+</document>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RefundCauseCell" id="lfz-YQ-rhM" customClass="RefundCauseCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lfz-YQ-rhM" id="O6P-b1-ies">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dr3-fu-Fcw">
+                        <rect key="frame" x="18" y="11" width="36" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.13333334028720856" green="0.13333334028720856" blue="0.13333334028720856" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oub-NZ-68R">
+                        <rect key="frame" x="283" y="11" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="3FR-hE-kKz"/>
+                            <constraint firstAttribute="height" constant="20" id="CPq-6E-vbz"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dr3-fu-Fcw" firstAttribute="top" secondItem="oub-NZ-68R" secondAttribute="top" id="9Oa-En-jWY"/>
+                    <constraint firstItem="Dr3-fu-Fcw" firstAttribute="leading" secondItem="O6P-b1-ies" secondAttribute="leadingMargin" constant="-2" id="A4J-Gc-vxW"/>
+                    <constraint firstItem="Dr3-fu-Fcw" firstAttribute="top" secondItem="O6P-b1-ies" secondAttribute="topMargin" constant="3" id="Ovd-SY-xIE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oub-NZ-68R" secondAttribute="trailing" constant="9" id="SuP-My-qHq"/>
+                    <constraint firstItem="oub-NZ-68R" firstAttribute="centerY" secondItem="O6P-b1-ies" secondAttribute="centerY" id="aMT-Cd-Cv5"/>
+                    <constraint firstItem="oub-NZ-68R" firstAttribute="leading" secondItem="Dr3-fu-Fcw" secondAttribute="trailing" constant="74" id="buJ-90-ddZ"/>
+                    <constraint firstItem="oub-NZ-68R" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Dr3-fu-Fcw" secondAttribute="trailing" constant="10" id="f2K-Xh-gPX"/>
+                    <constraint firstItem="oub-NZ-68R" firstAttribute="centerY" secondItem="Dr3-fu-Fcw" secondAttribute="centerY" id="geq-7A-Llu"/>
+                    <constraint firstItem="Dr3-fu-Fcw" firstAttribute="leading" secondItem="O6P-b1-ies" secondAttribute="leading" constant="18" id="qfS-d2-Mvh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Dr3-fu-Fcw" secondAttribute="bottom" constant="1" id="sRY-iS-fqM"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="9Oa-En-jWY"/>
+                        <exclude reference="A4J-Gc-vxW"/>
+                        <exclude reference="Ovd-SY-xIE"/>
+                        <exclude reference="sRY-iS-fqM"/>
+                        <exclude reference="buJ-90-ddZ"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="causeLabel" destination="Dr3-fu-Fcw" id="AU1-YV-UWs"/>
+                <outlet property="rightImageView" destination="oub-NZ-68R" id="3BN-fi-aEe"/>
+            </connections>
+            <point key="canvasLocation" x="257" y="92"/>
+        </tableViewCell>
+    </objects>
+</document>

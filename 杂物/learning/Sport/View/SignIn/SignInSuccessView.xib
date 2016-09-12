@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="aaF-g7-JTW" customClass="SignInSuccessView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="sign_in_success" translatesAutoresizingMaskIntoConstraints="NO" id="qx3-Rd-obc">
+                    <rect key="frame" x="76" y="70" width="167" height="93"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="打卡成功！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNL-Ga-moj">
+                    <rect key="frame" x="115" y="198" width="90" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="when where" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hW7-eu-iwO">
+                    <rect key="frame" x="126" y="234" width="68.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="本次获得" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tv-hP-lRn">
+                    <rect key="frame" x="130" y="296" width="60" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.35686274509803922" green="0.45098039215686275" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="已连续3周打卡，连续打卡5周将获得5元代金券！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6i5-FZ-SWH">
+                    <rect key="frame" x="29" y="329" width="262.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.13333333333333333" green="0.13333333333333333" blue="0.13333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-ME-Udd">
+                    <rect key="frame" x="75" y="418" width="170" height="40"/>
+                    <color key="backgroundColor" red="0.35686274509803922" green="0.45098039215686275" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="170" id="LhZ-YN-FYl"/>
+                        <constraint firstAttribute="height" constant="40" id="lIb-8I-0eK"/>
+                    </constraints>
+                    <state key="normal" title="分享"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="clickShareButton:" destination="aaF-g7-JTW" eventType="touchUpInside" id="hZR-ck-nSd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="300" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rf-Qv-p70">
+                    <rect key="frame" x="115" y="473" width="90" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="查看运动记录">
+                        <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickSportRecordsButton:" destination="aaF-g7-JTW" eventType="touchUpInside" id="QzS-ei-3qn"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hW7-eu-iwO" firstAttribute="centerX" secondItem="aaF-g7-JTW" secondAttribute="centerX" id="20g-dP-Nzv"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="6i5-FZ-SWH" secondAttribute="trailing" constant="15" id="2ab-0z-3HB"/>
+                <constraint firstItem="9Tv-hP-lRn" firstAttribute="top" secondItem="hW7-eu-iwO" secondAttribute="bottom" constant="48" id="3AN-Gv-cXA"/>
+                <constraint firstAttribute="bottom" secondItem="4rf-Qv-p70" secondAttribute="bottom" priority="250" constant="20" id="4IK-oM-t2d"/>
+                <constraint firstItem="wdV-ME-Udd" firstAttribute="top" secondItem="6i5-FZ-SWH" secondAttribute="bottom" constant="75" id="6t6-gX-wiE"/>
+                <constraint firstItem="9Tv-hP-lRn" firstAttribute="centerX" secondItem="aaF-g7-JTW" secondAttribute="centerX" id="7OE-d4-tZE"/>
+                <constraint firstAttribute="bottom" secondItem="4rf-Qv-p70" secondAttribute="bottom" priority="700" constant="20" id="BHd-hx-hHw"/>
+                <constraint firstItem="lNL-Ga-moj" firstAttribute="top" secondItem="qx3-Rd-obc" secondAttribute="bottom" constant="35" id="BnK-5x-jcI"/>
+                <constraint firstItem="6i5-FZ-SWH" firstAttribute="centerX" secondItem="aaF-g7-JTW" secondAttribute="centerX" id="G6c-Te-trc"/>
+                <constraint firstItem="4rf-Qv-p70" firstAttribute="centerX" secondItem="aaF-g7-JTW" secondAttribute="centerX" id="LKr-jp-7uC"/>
+                <constraint firstItem="qx3-Rd-obc" firstAttribute="top" secondItem="aaF-g7-JTW" secondAttribute="top" constant="70" id="OTE-a5-N4V"/>
+                <constraint firstItem="wdV-ME-Udd" firstAttribute="centerX" secondItem="aaF-g7-JTW" secondAttribute="centerX" id="RGA-DE-550"/>
+                <constraint firstItem="6i5-FZ-SWH" firstAttribute="top" secondItem="9Tv-hP-lRn" secondAttribute="bottom" constant="15" id="TKa-BR-qkA"/>
+                <constraint firstItem="qx3-Rd-obc" firstAttribute="centerX" secondItem="aaF-g7-JTW" secondAttribute="centerX" id="Y5x-Xf-av2"/>
+                <constraint firstItem="lNL-Ga-moj" firstAttribute="centerX" secondItem="aaF-g7-JTW" secondAttribute="centerX" id="dFb-qS-b0a"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hW7-eu-iwO" secondAttribute="trailing" constant="15" id="iJb-CM-m5Q"/>
+                <constraint firstItem="hW7-eu-iwO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aaF-g7-JTW" secondAttribute="leading" constant="15" id="lKS-fJ-qr4"/>
+                <constraint firstItem="hW7-eu-iwO" firstAttribute="top" secondItem="lNL-Ga-moj" secondAttribute="bottom" constant="15" id="lth-Cr-Yx2"/>
+                <constraint firstItem="6i5-FZ-SWH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aaF-g7-JTW" secondAttribute="leading" constant="15" id="nPP-gu-lhb"/>
+                <constraint firstItem="4rf-Qv-p70" firstAttribute="top" secondItem="wdV-ME-Udd" secondAttribute="bottom" constant="15" id="sff-S4-9D5"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="BHd-hx-hHw"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="mainImageViewTopConstraint" destination="OTE-a5-N4V" id="n8i-oh-C9Y"/>
+                <outlet property="rewardLabel" destination="9Tv-hP-lRn" id="MT8-4V-Haq"/>
+                <outlet property="sportRecordsButton" destination="4rf-Qv-p70" id="OyI-OB-aXS"/>
+                <outlet property="subTitleLabel" destination="hW7-eu-iwO" id="BJu-wd-Cwf"/>
+                <outlet property="tipsLabel" destination="6i5-FZ-SWH" id="6g4-19-9FG"/>
+            </connections>
+            <point key="canvasLocation" x="385" y="31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sign_in_success" width="167" height="93"/>
+    </resources>
+</document>

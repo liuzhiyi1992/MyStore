@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CoachItemCell" id="sQ6-ee-Yjc" customClass="CoachItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sQ6-ee-Yjc" id="T2c-YK-Qd3">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7B7-7U-s0h">
+                        <rect key="frame" x="15" y="15" width="290" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时长：1小时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HQX-LS-QCn">
+                                <rect key="frame" x="0.0" y="50" width="66" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVO-Ot-xmu" customClass="UIBlueRoundStokeButton">
+                                <rect key="frame" x="230" y="45" width="60" height="25"/>
+                                <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="hSt-tv-LOX"/>
+                                    <constraint firstAttribute="height" constant="25" id="zXl-rw-Gze"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <state key="normal" title="预约">
+                                    <color key="titleColor" red="0.35686274509999999" green="0.45098039220000002" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBookingButton:" destination="sQ6-ee-Yjc" eventType="touchUpInside" id="aiV-y3-upk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="754" text="50元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5D-ql-1qv">
+                                <rect key="frame" x="263" y="8" width="27" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_peilian.png" translatesAutoresizingMaskIntoConstraints="NO" id="TkD-h5-izi">
+                                <rect key="frame" x="103" y="6" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Jk5-kq-hsM"/>
+                                    <constraint firstAttribute="width" constant="15" id="ogD-kb-oGP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="羽毛球入门陪打" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cm3-6k-Z4u">
+                                <rect key="frame" x="0.0" y="5" width="98" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I5D-ql-1qv" secondAttribute="trailing" id="6eq-C7-mPX"/>
+                            <constraint firstItem="TkD-h5-izi" firstAttribute="leading" secondItem="Cm3-6k-Z4u" secondAttribute="trailing" constant="5" id="8UU-ee-I03"/>
+                            <constraint firstItem="I5D-ql-1qv" firstAttribute="top" secondItem="Cm3-6k-Z4u" secondAttribute="top" constant="3" id="Dfh-SS-6ew"/>
+                            <constraint firstItem="TkD-h5-izi" firstAttribute="centerY" secondItem="Cm3-6k-Z4u" secondAttribute="centerY" id="KTW-YR-Ekq"/>
+                            <constraint firstItem="Cm3-6k-Z4u" firstAttribute="leading" secondItem="7B7-7U-s0h" secondAttribute="leading" id="Sop-HO-bJm"/>
+                            <constraint firstItem="I5D-ql-1qv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TkD-h5-izi" secondAttribute="trailing" constant="5" id="Ynb-6U-2Ec"/>
+                            <constraint firstAttribute="bottom" secondItem="PVO-Ot-xmu" secondAttribute="bottom" id="da5-N4-muR"/>
+                            <constraint firstAttribute="trailing" secondItem="PVO-Ot-xmu" secondAttribute="trailing" id="iCh-zW-ne9"/>
+                            <constraint firstItem="HQX-LS-QCn" firstAttribute="leading" secondItem="Cm3-6k-Z4u" secondAttribute="leading" id="jo9-Oq-Vyw"/>
+                            <constraint firstItem="Cm3-6k-Z4u" firstAttribute="top" secondItem="7B7-7U-s0h" secondAttribute="top" constant="5" id="nKc-nX-doo"/>
+                            <constraint firstItem="HQX-LS-QCn" firstAttribute="centerY" secondItem="PVO-Ot-xmu" secondAttribute="centerY" id="sTf-DZ-ZUa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="7B7-7U-s0h" secondAttribute="trailing" constant="7" id="681-k7-reO"/>
+                    <constraint firstItem="7B7-7U-s0h" firstAttribute="centerY" secondItem="T2c-YK-Qd3" secondAttribute="centerY" id="COE-e7-cVp"/>
+                    <constraint firstItem="7B7-7U-s0h" firstAttribute="leading" secondItem="T2c-YK-Qd3" secondAttribute="leadingMargin" constant="7" id="ntf-SK-qCy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="7B7-7U-s0h" firstAttribute="height" secondItem="sQ6-ee-Yjc" secondAttribute="height" multiplier="7:10" priority="900" id="gqJ-Md-NC0"/>
+            </constraints>
+            <connections>
+                <outlet property="commitButton" destination="PVO-Ot-xmu" id="fNw-VF-9AK"/>
+                <outlet property="contentViewHeightScaleConstraint" destination="gqJ-Md-NC0" id="caL-uv-gNv"/>
+                <outlet property="contentholderView" destination="7B7-7U-s0h" id="jkU-vn-UDh"/>
+                <outlet property="iconImageView" destination="TkD-h5-izi" id="Sv2-1w-1Do"/>
+                <outlet property="itemTitleLabel" destination="Cm3-6k-Z4u" id="qO9-M3-r2G"/>
+                <outlet property="priceLabel" destination="I5D-ql-1qv" id="yWa-B5-24r"/>
+                <outlet property="timeLabel" destination="HQX-LS-QCn" id="zRY-Iw-LLI"/>
+            </connections>
+            <point key="canvasLocation" x="226" y="554"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_peilian.png" width="15" height="15"/>
+    </resources>
+</document>

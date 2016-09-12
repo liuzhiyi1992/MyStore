@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardSelectedCell" id="L1k-H0-t1P" customClass="CardSelectedCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L1k-H0-t1P" id="zcL-ep-AlB">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="16" placeholderIntrinsicHeight="16" translatesAutoresizingMaskIntoConstraints="NO" id="Pq3-pc-fpV">
+                        <rect key="frame" x="291" y="13" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="9t6-pL-DCd"/>
+                            <constraint firstAttribute="width" constant="16" id="lJk-Y3-aFq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="1234567" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-2F-7GA">
+                        <rect key="frame" x="96" y="13" width="61" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="7fJ-sf-auo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="7fJ-sf-auo"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" misplaced="YES" text="卡号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ojq-eg-Lpn">
+                        <rect key="frame" x="51" y="13" width="45" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell_line_e6" translatesAutoresizingMaskIntoConstraints="NO" id="sua-RJ-qyv">
+                        <rect key="frame" x="15" y="0.0" width="305" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="MMs-Sz-pNT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuw-Ez-aRr">
+                        <rect key="frame" x="156" y="15" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.35686275360000003" green="0.45098039509999999" blue="0.94901961089999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sua-RJ-qyv" firstAttribute="leading" secondItem="zcL-ep-AlB" secondAttribute="leading" constant="15" id="9kk-FH-N77"/>
+                    <constraint firstItem="WLv-2F-7GA" firstAttribute="leading" secondItem="Ojq-eg-Lpn" secondAttribute="trailing" id="FQB-iY-KFr"/>
+                    <constraint firstItem="WLv-2F-7GA" firstAttribute="leading" secondItem="zcL-ep-AlB" secondAttribute="leading" constant="96" id="IJd-Qf-Cio"/>
+                    <constraint firstItem="Pq3-pc-fpV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xuw-Ez-aRr" secondAttribute="trailing" constant="5" id="Iv8-Ff-BNI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Pq3-pc-fpV" secondAttribute="trailing" constant="5" id="LkN-Eh-zig"/>
+                    <constraint firstAttribute="trailing" secondItem="sua-RJ-qyv" secondAttribute="trailing" id="YOD-EQ-onX"/>
+                    <constraint firstItem="WLv-2F-7GA" firstAttribute="centerY" secondItem="Ojq-eg-Lpn" secondAttribute="centerY" id="diB-om-ukf"/>
+                    <constraint firstItem="Ojq-eg-Lpn" firstAttribute="leading" secondItem="zcL-ep-AlB" secondAttribute="leadingMargin" constant="43" id="gtC-3z-I6D"/>
+                    <constraint firstItem="Pq3-pc-fpV" firstAttribute="centerY" secondItem="zcL-ep-AlB" secondAttribute="centerY" id="jDf-mg-7q8"/>
+                    <constraint firstItem="xuw-Ez-aRr" firstAttribute="leading" secondItem="WLv-2F-7GA" secondAttribute="trailing" constant="10" id="oTx-u2-35D"/>
+                    <constraint firstItem="Ojq-eg-Lpn" firstAttribute="centerY" secondItem="zcL-ep-AlB" secondAttribute="centerY" id="plR-XD-QDs"/>
+                    <constraint firstItem="sua-RJ-qyv" firstAttribute="top" secondItem="zcL-ep-AlB" secondAttribute="top" id="uuy-2G-db7"/>
+                    <constraint firstItem="xuw-Ez-aRr" firstAttribute="centerY" secondItem="Ojq-eg-Lpn" secondAttribute="centerY" id="w9M-mv-Kog"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="IJd-Qf-Cio"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cardBalanceLabel" destination="xuw-Ez-aRr" id="4A5-Ir-3EP"/>
+                <outlet property="cardNumberLabel" destination="WLv-2F-7GA" id="fHs-aJ-AMK"/>
+                <outlet property="cardNumberLabelWidth" destination="7fJ-sf-auo" id="E7P-tT-4TQ"/>
+                <outlet property="leadingConstrant" destination="gtC-3z-I6D" id="RPb-CL-d2M"/>
+                <outlet property="rightImageView" destination="Pq3-pc-fpV" id="3NS-eH-xtX"/>
+                <outlet property="topLineImageView" destination="sua-RJ-qyv" id="f89-sv-ePj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cell_line_e6" width="1" height="1"/>
+    </resources>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SportPlusMinusView">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="onh-TO-JKr">
+                    <rect key="frame" x="0.0" y="0.0" width="115" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="9gZ-U1-3DW"/>
+                        <constraint firstAttribute="width" constant="115" id="K1j-5O-76H"/>
+                    </constraints>
+                    <color key="textColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="yWO-7J-lD5"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAp-2I-eWo" userLabel="minus">
+                    <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="ehU-tG-dLc"/>
+                        <constraint firstAttribute="height" constant="35" id="pbT-7B-mOh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="minus">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="minus_off"/>
+                    <state key="highlighted" image="minus_highlight"/>
+                    <connections>
+                        <action selector="clickMinusButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="cch-xO-LWm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LAG-SW-c5t" userLabel="plus">
+                    <rect key="frame" x="80" y="0.0" width="35" height="35"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="UDQ-du-JMW"/>
+                        <constraint firstAttribute="height" constant="35" id="e8G-w2-y2l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" image="plus">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="disabled" image="plus_off"/>
+                    <state key="highlighted" image="plus_highlight"/>
+                    <connections>
+                        <action selector="clickPlusButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="i3X-YQ-xNr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HAp-2I-eWo" firstAttribute="centerY" secondItem="onh-TO-JKr" secondAttribute="centerY" id="0z7-U7-xnc"/>
+                <constraint firstItem="HAp-2I-eWo" firstAttribute="leading" secondItem="onh-TO-JKr" secondAttribute="leading" id="8bp-Oy-xqt"/>
+                <constraint firstItem="onh-TO-JKr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LCn-XF-tr8"/>
+                <constraint firstItem="LAG-SW-c5t" firstAttribute="centerY" secondItem="onh-TO-JKr" secondAttribute="centerY" id="PSz-hi-CuT"/>
+                <constraint firstItem="onh-TO-JKr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bK4-G4-AEH"/>
+                <constraint firstItem="onh-TO-JKr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="seY-3b-4Sn"/>
+                <constraint firstItem="LAG-SW-c5t" firstAttribute="trailing" secondItem="onh-TO-JKr" secondAttribute="trailing" id="vgM-KI-Ykh"/>
+                <constraint firstAttribute="bottom" secondItem="onh-TO-JKr" secondAttribute="bottom" id="vxd-ks-WYS"/>
+                <constraint firstAttribute="trailing" secondItem="onh-TO-JKr" secondAttribute="trailing" id="yXv-37-CaQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="LCn-XF-tr8"/>
+                    <exclude reference="vxd-ks-WYS"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="minusButton" destination="HAp-2I-eWo" id="sqP-Yq-5Ox"/>
+                <outlet property="numberTextField" destination="onh-TO-JKr" id="ZeO-EY-ACD"/>
+                <outlet property="plusButton" destination="LAG-SW-c5t" id="kBf-L8-bhQ"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="minus" width="35" height="35"/>
+        <image name="minus_highlight" width="35" height="35"/>
+        <image name="minus_off" width="35" height="35"/>
+        <image name="plus" width="35" height="35"/>
+        <image name="plus_highlight" width="35" height="35"/>
+        <image name="plus_off" width="35" height="35"/>
+    </resources>
+</document>

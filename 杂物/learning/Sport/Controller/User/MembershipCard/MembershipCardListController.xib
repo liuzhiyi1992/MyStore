@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MembershipCardListController">
+            <connections>
+                <outlet property="addCardButton" destination="CBg-1R-utN" id="eKs-qo-XBG"/>
+                <outlet property="addNoneCardButton" destination="4gU-8c-Ghq" id="ZAb-NF-BbW"/>
+                <outlet property="bindCardView" destination="5FR-7z-0vf" id="ZMU-c3-uGm"/>
+                <outlet property="cardInfoView" destination="I2l-Ye-3ED" id="M0Z-zn-y9W"/>
+                <outlet property="headerTitleView" destination="wcD-cJ-2aX" id="SBU-XG-mRz"/>
+                <outlet property="noCardView" destination="fFt-l3-0eW" id="idf-9t-eIt"/>
+                <outlet property="noDataLabel" destination="SeD-ar-2JI" id="eYf-rb-fsN"/>
+                <outlet property="tableView" destination="dEd-ov-eNV" id="qNE-Z4-SoQ"/>
+                <outlet property="userCardRuleButton" destination="vsO-bc-jOg" id="T3B-Az-Gvf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5FR-7z-0vf" userLabel="BindMemberCard">
+                    <rect key="frame" x="0.0" y="686" width="414" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CBg-1R-utN" userLabel="绑定本手机下的会员卡">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定会员卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn5-Qv-t1f">
+                            <rect key="frame" x="180" y="16" width="75" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_card_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="zBu-m5-wCa">
+                            <rect key="frame" x="152" y="16" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="zBu-m5-wCa" secondAttribute="height" multiplier="1:1" id="UTB-VS-gkI"/>
+                                <constraint firstAttribute="width" constant="22" id="bjZ-Cj-a0v"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="bjZ-Cj-a0v"/>
+                                </mask>
+                            </variation>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.45490196347236633" green="0.68627452850341797" blue="0.9843137264251709" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="CBg-1R-utN" firstAttribute="leading" secondItem="5FR-7z-0vf" secondAttribute="leading" id="2fv-XQ-ntK"/>
+                        <constraint firstAttribute="centerX" secondItem="CBg-1R-utN" secondAttribute="centerX" id="7Zn-P6-wOe"/>
+                        <constraint firstAttribute="centerY" secondItem="gn5-Qv-t1f" secondAttribute="centerY" id="81j-qx-Ckt"/>
+                        <constraint firstItem="CBg-1R-utN" firstAttribute="top" secondItem="5FR-7z-0vf" secondAttribute="top" id="Eo4-yo-FzB"/>
+                        <constraint firstItem="gn5-Qv-t1f" firstAttribute="height" secondItem="zBu-m5-wCa" secondAttribute="height" id="HVV-UC-GdB"/>
+                        <constraint firstAttribute="centerX" secondItem="gn5-Qv-t1f" secondAttribute="centerX" constant="-10" id="PZu-Rv-YnN"/>
+                        <constraint firstAttribute="height" constant="50" id="SYd-af-5rM"/>
+                        <constraint firstAttribute="bottom" secondItem="CBg-1R-utN" secondAttribute="bottom" id="fIC-fD-CdW"/>
+                        <constraint firstAttribute="trailing" secondItem="CBg-1R-utN" secondAttribute="trailing" id="h95-yd-si3"/>
+                        <constraint firstAttribute="centerY" secondItem="zBu-m5-wCa" secondAttribute="centerY" id="o0t-qp-kH5"/>
+                        <constraint firstItem="gn5-Qv-t1f" firstAttribute="leading" secondItem="zBu-m5-wCa" secondAttribute="trailing" constant="10" id="zBB-ve-BQe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFt-l3-0eW" userLabel="addMemberCardView">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kTt-qN-iJv">
+                            <rect key="frame" x="146" y="297" width="122" height="43"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfe-2h-7CM">
+                                    <rect key="frame" x="0.0" y="0.0" width="56" height="42"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.36470588235294116" green="0.36470588235294116" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会员卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N5S-iR-gN4">
+                                    <rect key="frame" x="58" y="13" width="42" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="N5S-iR-gN4" secondAttribute="height" multiplier="1:1" id="GPG-yf-Zze"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" red="0.0" green="0.62352941176470589" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="GPG-yf-Zze"/>
+                                        </mask>
+                                    </variation>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no_card_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="fAE-BY-B6m">
+                                    <rect key="frame" x="105" y="13" width="17" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="fAE-BY-B6m" secondAttribute="height" multiplier="1:1" id="GII-mw-ggY"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0O-Tj-zPQ">
+                                    <rect key="frame" x="58" y="8" width="64" height="30"/>
+                                    <state key="normal">
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="clickUserCardRuleButton:" destination="-1" eventType="touchUpInside" id="pUv-1X-WAu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="N5S-iR-gN4" firstAttribute="centerY" secondItem="jfe-2h-7CM" secondAttribute="centerY" id="9sm-G1-PS5"/>
+                                <constraint firstItem="jfe-2h-7CM" firstAttribute="top" secondItem="kTt-qN-iJv" secondAttribute="top" id="AUj-k6-Jrm"/>
+                                <constraint firstItem="jfe-2h-7CM" firstAttribute="leading" secondItem="kTt-qN-iJv" secondAttribute="leading" id="Ayz-nN-HXL"/>
+                                <constraint firstAttribute="centerY" secondItem="jfe-2h-7CM" secondAttribute="centerY" id="DBR-dS-vRa"/>
+                                <constraint firstItem="N5S-iR-gN4" firstAttribute="leading" secondItem="jfe-2h-7CM" secondAttribute="trailing" constant="2" id="Ulb-Nm-OBK"/>
+                                <constraint firstItem="N5S-iR-gN4" firstAttribute="height" secondItem="jfe-2h-7CM" secondAttribute="height" id="VI9-G5-cao"/>
+                                <constraint firstItem="fAE-BY-B6m" firstAttribute="centerY" secondItem="jfe-2h-7CM" secondAttribute="centerY" id="Z3t-rx-kjb"/>
+                                <constraint firstItem="fAE-BY-B6m" firstAttribute="height" secondItem="N5S-iR-gN4" secondAttribute="height" id="l4n-Y4-fdN"/>
+                                <constraint firstItem="fAE-BY-B6m" firstAttribute="leading" secondItem="N5S-iR-gN4" secondAttribute="trailing" constant="5" id="lnw-UC-uRN"/>
+                                <constraint firstAttribute="height" constant="43" id="luf-HI-5Aj"/>
+                                <constraint firstAttribute="trailing" secondItem="fAE-BY-B6m" secondAttribute="trailing" id="n7B-wx-aUT"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="VI9-G5-cao"/>
+                                </mask>
+                            </variation>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gU-8c-Ghq">
+                            <rect key="frame" x="152" y="350" width="110" height="35"/>
+                            <color key="backgroundColor" red="0.0" green="0.62352941176470589" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="5Fd-Uz-kfM"/>
+                                <constraint firstAttribute="width" constant="110" id="WqH-63-hso"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="添加会员卡">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickAddCardButton:" destination="-1" eventType="touchUpInside" id="IKC-Vu-aFn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="kTt-qN-iJv" firstAttribute="leading" secondItem="fFt-l3-0eW" secondAttribute="leading" constant="150" id="Cjx-pV-EQd"/>
+                        <constraint firstAttribute="centerX" secondItem="4gU-8c-Ghq" secondAttribute="centerX" id="H1K-MI-jpq"/>
+                        <constraint firstItem="4gU-8c-Ghq" firstAttribute="top" secondItem="kTt-qN-iJv" secondAttribute="bottom" constant="10" id="WNp-V9-Tf8"/>
+                        <constraint firstItem="kTt-qN-iJv" firstAttribute="top" secondItem="fFt-l3-0eW" secondAttribute="top" constant="121" id="feU-oL-5Nv"/>
+                        <constraint firstAttribute="centerY" secondItem="kTt-qN-iJv" secondAttribute="centerY" constant="50" id="feX-k9-mBl"/>
+                        <constraint firstAttribute="centerX" secondItem="kTt-qN-iJv" secondAttribute="centerX" id="wZo-88-kQp"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Cjx-pV-EQd"/>
+                            <exclude reference="feU-oL-5Nv"/>
+                        </mask>
+                    </variation>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="dEd-ov-eNV">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <view key="tableFooterView" contentMode="scaleToFill" id="y4N-rx-sHJ" userLabel="footerView">
+                        <rect key="frame" x="0.0" y="521" width="414" height="215"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您没有办理场馆会员卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SeD-ar-2JI" userLabel="您没有办理场馆会员卡">
+                                <rect key="frame" x="137" y="50" width="140" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CardInfoImage" translatesAutoresizingMaskIntoConstraints="NO" id="I2l-Ye-3ED">
+                                <rect key="frame" x="84" y="20" width="245" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="N00-q7-NYg"/>
+                                    <constraint firstAttribute="width" constant="245" id="cWY-YQ-j8l"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="SeD-ar-2JI" secondAttribute="centerX" id="6d2-ce-4IN"/>
+                            <constraint firstAttribute="centerX" secondItem="I2l-Ye-3ED" secondAttribute="centerX" id="UIi-wB-wKb"/>
+                            <constraint firstAttribute="bottom" secondItem="I2l-Ye-3ED" secondAttribute="bottom" constant="15" id="g76-Wv-Ksd"/>
+                            <constraint firstItem="SeD-ar-2JI" firstAttribute="top" secondItem="y4N-rx-sHJ" secondAttribute="top" constant="50" id="qIj-Qn-Nno"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="t12-W4-stB"/>
+                        <outlet property="delegate" destination="-1" id="DMc-uv-md8"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="centerX" secondItem="fFt-l3-0eW" secondAttribute="centerX" id="0cg-en-rAX"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="leading" secondItem="fFt-l3-0eW" secondAttribute="trailing" constant="-450" id="0n2-pm-mXJ"/>
+                <constraint firstAttribute="bottom" secondItem="dEd-ov-eNV" secondAttribute="bottom" id="3YP-NH-ypq"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="leading" secondItem="fFt-l3-0eW" secondAttribute="leading" id="4ZI-yf-ES9"/>
+                <constraint firstItem="5FR-7z-0vf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Hxa-yz-Rgk"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="JAG-ug-S5G"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="top" secondItem="fFt-l3-0eW" secondAttribute="top" id="N2Z-Ie-1Ph"/>
+                <constraint firstAttribute="centerX" secondItem="5FR-7z-0vf" secondAttribute="centerX" id="W25-0p-iRQ"/>
+                <constraint firstAttribute="trailing" secondItem="dEd-ov-eNV" secondAttribute="trailing" id="fd3-dc-tId"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="trailing" secondItem="fFt-l3-0eW" secondAttribute="trailing" id="g3l-ea-xjD"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="bottom" secondItem="fFt-l3-0eW" secondAttribute="bottom" id="hih-KB-3pJ"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="leading" secondItem="fFt-l3-0eW" secondAttribute="trailing" constant="-450" id="nVf-pv-KZq"/>
+                <constraint firstItem="dEd-ov-eNV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ndz-TJ-tqz"/>
+                <constraint firstAttribute="centerX" secondItem="dEd-ov-eNV" secondAttribute="centerX" id="tBL-WI-Xfd"/>
+                <constraint firstAttribute="bottom" secondItem="5FR-7z-0vf" secondAttribute="bottom" id="tcN-hP-2z2"/>
+                <constraint firstAttribute="trailing" secondItem="5FR-7z-0vf" secondAttribute="trailing" id="yvi-Uv-8m6"/>
+                <constraint firstItem="5FR-7z-0vf" firstAttribute="top" secondItem="dEd-ov-eNV" secondAttribute="bottom" id="zlx-qw-Km2"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0n2-pm-mXJ"/>
+                    <exclude reference="nVf-pv-KZq"/>
+                    <exclude reference="zlx-qw-Km2"/>
+                </mask>
+            </variation>
+        </view>
+        <view contentMode="scaleToFill" id="wcD-cJ-2aX">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="37"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可绑定的" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U5Q-E9-LhV">
+                    <rect key="frame" x="30" y="10" width="56" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.364705890417099" green="0.364705890417099" blue="0.364705890417099" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会员卡" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmM-Lh-0fC">
+                    <rect key="frame" x="86" y="10" width="42" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.45490196347236633" green="0.68627452850341797" blue="0.9843137264251709" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsO-bc-jOg">
+                    <rect key="frame" x="133" y="11" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="15" id="njM-Ns-8xW"/>
+                        <constraint firstAttribute="height" constant="15" id="zXC-ac-7u7"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="card_verify_icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickUserCardRuleButton:" destination="-1" eventType="touchUpInside" id="6qc-Qg-LPy"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CHt-3g-2bt">
+                    <rect key="frame" x="86" y="0.0" width="62" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="Irk-9y-DGP"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickUserCardRuleButton:" destination="-1" eventType="touchUpInside" id="69m-CB-iS9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.93725490196078431" blue="0.92941176470588238" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vsO-bc-jOg" firstAttribute="top" secondItem="AmM-Lh-0fC" secondAttribute="bottom" constant="-15" id="4M6-P8-fev"/>
+                <constraint firstItem="CHt-3g-2bt" firstAttribute="top" secondItem="wcD-cJ-2aX" secondAttribute="top" id="9b9-8L-prP"/>
+                <constraint firstAttribute="centerY" secondItem="vsO-bc-jOg" secondAttribute="centerY" id="BJu-Cx-GbW"/>
+                <constraint firstItem="AmM-Lh-0fC" firstAttribute="leading" secondItem="U5Q-E9-LhV" secondAttribute="trailing" id="JoD-hh-DIE"/>
+                <constraint firstItem="vsO-bc-jOg" firstAttribute="leading" secondItem="AmM-Lh-0fC" secondAttribute="trailing" constant="5" id="LaM-ar-aqG"/>
+                <constraint firstAttribute="trailing" secondItem="CHt-3g-2bt" secondAttribute="trailing" constant="168" id="Lkg-IW-38B"/>
+                <constraint firstAttribute="bottom" secondItem="CHt-3g-2bt" secondAttribute="bottom" id="QZc-a3-sVN"/>
+                <constraint firstItem="U5Q-E9-LhV" firstAttribute="leading" secondItem="wcD-cJ-2aX" secondAttribute="leading" constant="30" id="TyJ-6N-shE"/>
+                <constraint firstAttribute="centerY" secondItem="CHt-3g-2bt" secondAttribute="centerY" id="X15-s5-YBM"/>
+                <constraint firstItem="U5Q-E9-LhV" firstAttribute="centerY" secondItem="AmM-Lh-0fC" secondAttribute="centerY" id="Zkc-7a-KsR"/>
+                <constraint firstItem="CHt-3g-2bt" firstAttribute="leading" secondItem="wcD-cJ-2aX" secondAttribute="leading" constant="86" id="tD2-Iz-Dlg"/>
+                <constraint firstItem="CHt-3g-2bt" firstAttribute="trailing" secondItem="vsO-bc-jOg" secondAttribute="trailing" id="tRK-SW-q3Z"/>
+                <constraint firstAttribute="centerY" secondItem="U5Q-E9-LhV" secondAttribute="centerY" id="uTm-JK-p5m"/>
+                <constraint firstItem="CHt-3g-2bt" firstAttribute="leading" secondItem="AmM-Lh-0fC" secondAttribute="leading" id="zeY-4Y-SwY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Lkg-IW-38B"/>
+                    <exclude reference="tD2-Iz-Dlg"/>
+                    <exclude reference="4M6-P8-fev"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="175" y="-161.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CardInfoImage" width="226" height="114"/>
+        <image name="add_card_icon.png" width="16" height="16"/>
+        <image name="card_verify_icon.png" width="20" height="20"/>
+        <image name="no_card_icon.png" width="13" height="13"/>
+    </resources>
+</document>

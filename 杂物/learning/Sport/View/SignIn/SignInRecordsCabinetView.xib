@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInRecordsCabinetView">
+            <connections>
+                <outlet property="backgroundImageView" destination="zMJ-Wf-Onn" id="wEP-XL-V7o"/>
+                <outlet property="numberLabel" destination="Cs2-LT-aUv" id="gch-y8-bgC"/>
+                <outlet property="rewardSignBottomConstraint" destination="yiA-WQ-pTU" id="Co6-7l-AUk"/>
+                <outlet property="rewardSignImageView" destination="YNV-eH-zTE" id="TTq-Iy-giq"/>
+                <outlet property="rmbImageView" destination="FrD-qP-RyA" id="7pa-LG-dMP"/>
+                <outlet property="view" destination="M92-lJ-aji" id="nhb-co-kg8"/>
+                <outlet property="weekNameLabel" destination="54b-kK-YMs" id="qIl-fu-tqd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" verticalCompressionResistancePriority="800" id="M92-lJ-aji">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zMJ-Wf-Onn">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="zMJ-Wf-Onn" secondAttribute="height" multiplier="1:1" id="WFo-tI-z5U"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_in_logo_bright" translatesAutoresizingMaskIntoConstraints="NO" id="FrD-qP-RyA">
+                    <rect key="frame" x="36" y="3" width="14" height="8"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UKW-02-e7j">
+                    <rect key="frame" x="5" y="5" width="40" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9" lineBreakMode="characterWrap" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cs2-LT-aUv">
+                            <rect key="frame" x="16" y="9" width="24" height="23"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" red="0.74901960784313726" green="0.78823529411764703" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sign_in_rmb_sign_bright" translatesAutoresizingMaskIntoConstraints="NO" id="YNV-eH-zTE">
+                            <rect key="frame" x="7" y="19" width="8" height="8"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="UKW-02-e7j" secondAttribute="height" multiplier="1:1" id="FqP-ay-MLL"/>
+                        <constraint firstItem="Cs2-LT-aUv" firstAttribute="leading" secondItem="YNV-eH-zTE" secondAttribute="trailing" constant="1" id="K9k-Ph-3s9"/>
+                        <constraint firstItem="Cs2-LT-aUv" firstAttribute="centerY" secondItem="UKW-02-e7j" secondAttribute="centerY" id="h64-g0-aaU"/>
+                        <constraint firstAttribute="trailing" secondItem="Cs2-LT-aUv" secondAttribute="trailing" id="nlc-yh-FHB"/>
+                        <constraint firstItem="Cs2-LT-aUv" firstAttribute="width" secondItem="UKW-02-e7j" secondAttribute="width" multiplier="0.6:1" id="xP2-N9-s5I"/>
+                        <constraint firstItem="YNV-eH-zTE" firstAttribute="bottom" secondItem="Cs2-LT-aUv" secondAttribute="bottom" constant="-5" id="yiA-WQ-pTU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="第一周" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54b-kK-YMs">
+                    <rect key="frame" x="7" y="60" width="36" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="Oz7-Lh-bpS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.35686274509803922" green="0.45098039215686275" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Oz7-Lh-bpS"/>
+                        </mask>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zMJ-Wf-Onn" firstAttribute="top" secondItem="M92-lJ-aji" secondAttribute="top" id="Dr3-Zz-GNC"/>
+                <constraint firstItem="FrD-qP-RyA" firstAttribute="top" secondItem="M92-lJ-aji" secondAttribute="top" constant="3" id="LAn-tf-hof"/>
+                <constraint firstItem="UKW-02-e7j" firstAttribute="width" secondItem="zMJ-Wf-Onn" secondAttribute="width" multiplier="0.8:1" id="LyD-Kw-EMU"/>
+                <constraint firstItem="54b-kK-YMs" firstAttribute="top" secondItem="zMJ-Wf-Onn" secondAttribute="bottom" constant="10" id="TEj-N8-zew"/>
+                <constraint firstAttribute="bottom" secondItem="zMJ-Wf-Onn" secondAttribute="bottom" id="XlU-vi-lhH"/>
+                <constraint firstItem="UKW-02-e7j" firstAttribute="centerX" secondItem="zMJ-Wf-Onn" secondAttribute="centerX" id="ZdA-pP-E0H"/>
+                <constraint firstItem="UKW-02-e7j" firstAttribute="centerY" secondItem="zMJ-Wf-Onn" secondAttribute="centerY" id="Zwp-h1-DlZ"/>
+                <constraint firstItem="54b-kK-YMs" firstAttribute="centerX" secondItem="M92-lJ-aji" secondAttribute="centerX" id="et3-Ei-dL2"/>
+                <constraint firstAttribute="bottom" secondItem="54b-kK-YMs" secondAttribute="bottom" constant="4" id="jrC-Rc-XZD"/>
+                <constraint firstItem="zMJ-Wf-Onn" firstAttribute="leading" secondItem="M92-lJ-aji" secondAttribute="leading" id="kcg-An-ZN5"/>
+                <constraint firstAttribute="trailing" secondItem="zMJ-Wf-Onn" secondAttribute="trailing" id="peg-rl-xO8"/>
+                <constraint firstAttribute="trailing" secondItem="FrD-qP-RyA" secondAttribute="trailing" id="tUR-DW-niB"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="XlU-vi-lhH"/>
+                    <exclude reference="jrC-Rc-XZD"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="234" y="240"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="sign_in_logo_bright" width="14" height="8"/>
+        <image name="sign_in_rmb_sign_bright" width="8" height="8"/>
+    </resources>
+</document>

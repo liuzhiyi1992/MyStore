@@ -1,0 +1,1 @@
+../../../NMPublicRepo/NMPublic/Util/Device/DeviceDetection.h

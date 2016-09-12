@@ -1,0 +1,1 @@
+../../../MWPhotoBrowserForSport/Pod/Classes/MWGridCell.h

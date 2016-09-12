@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MonthCardFinishPayController">
+            <connections>
+                <outlet property="cardPlaceHolderView" destination="83V-nF-DMq" id="gkt-iC-vFf"/>
+                <outlet property="cardViewHeightConstraint" destination="9US-UZ-ZpA" id="oCh-Fp-CVt"/>
+                <outlet property="firstBuyView" destination="5m8-kr-dS5" id="rla-50-yk4"/>
+                <outlet property="secondBuyView" destination="UQL-qT-yvv" id="rIy-cG-ZD4"/>
+                <outlet property="uploadFinishButton" destination="WYY-8s-TGn" id="0u2-bb-DEL"/>
+                <outlet property="verticalConstrainit" destination="g2e-OU-ICJ" id="UFD-Mx-eV9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQL-qT-yvv">
+                    <rect key="frame" x="0.0" y="50" width="414" height="88"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您成功购买动Club会员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QVP-Tz-Ppa">
+                            <rect key="frame" x="116" y="0.0" width="182" height="88"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="QVP-Tz-Ppa" firstAttribute="top" secondItem="UQL-qT-yvv" secondAttribute="top" id="ETX-vG-JpC"/>
+                        <constraint firstAttribute="centerX" secondItem="QVP-Tz-Ppa" secondAttribute="centerX" id="TEQ-QB-2sz"/>
+                        <constraint firstAttribute="bottom" secondItem="QVP-Tz-Ppa" secondAttribute="bottom" id="aZi-9y-gfN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5m8-kr-dS5">
+                    <rect key="frame" x="0.0" y="30" width="414" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜你成为趣运动会员！" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZb-8P-JXg">
+                            <rect key="frame" x="125" y="5" width="165" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="使用前请先上传本人高清头像" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6c4-d3-eqc">
+                            <rect key="frame" x="110" y="23" width="195" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGI-5K-NrS">
+                            <rect key="frame" x="10" y="61" width="394" height="59"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <string key="text">注意：
+1、在你消费前，商家会对你进行身份验证
+2、上传后无法修改头像</string>
+                            <color key="textColor" red="0.57647061347961426" green="0.57647061347961426" blue="0.57647061347961426" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="AGI-5K-NrS" secondAttribute="bottom" id="0z6-da-Xg6"/>
+                        <constraint firstAttribute="trailing" secondItem="AGI-5K-NrS" secondAttribute="trailing" constant="10" id="6zP-Ik-orO"/>
+                        <constraint firstItem="AGI-5K-NrS" firstAttribute="top" secondItem="6c4-d3-eqc" secondAttribute="bottom" constant="20" id="Id8-8m-4CZ"/>
+                        <constraint firstItem="6c4-d3-eqc" firstAttribute="top" secondItem="cZb-8P-JXg" secondAttribute="bottom" id="TA6-ss-LcD"/>
+                        <constraint firstAttribute="centerX" secondItem="cZb-8P-JXg" secondAttribute="centerX" id="Weg-dy-A8R"/>
+                        <constraint firstItem="AGI-5K-NrS" firstAttribute="leading" secondItem="5m8-kr-dS5" secondAttribute="leading" constant="10" id="eaZ-6A-1Ch"/>
+                        <constraint firstItem="cZb-8P-JXg" firstAttribute="top" secondItem="5m8-kr-dS5" secondAttribute="top" constant="5" id="rZ1-YI-3dO"/>
+                        <constraint firstAttribute="centerX" secondItem="6c4-d3-eqc" secondAttribute="centerX" id="zCA-Ns-b4e"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83V-nF-DMq" userLabel="cardView">
+                    <rect key="frame" x="0.0" y="158" width="414" height="250"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="9US-UZ-ZpA"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYY-8s-TGn">
+                    <rect key="frame" x="40" y="433" width="334" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ap2-f2-1OA"/>
+                    </constraints>
+                    <state key="normal">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clickUploadFinishButton:" destination="-1" eventType="touchUpInside" id="Coy-AZ-Veg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="83V-nF-DMq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1rp-Wc-ZdU"/>
+                <constraint firstItem="WYY-8s-TGn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="3s5-uU-Kp5"/>
+                <constraint firstAttribute="trailing" secondItem="83V-nF-DMq" secondAttribute="trailing" id="8eo-lS-sTD"/>
+                <constraint firstItem="UQL-qT-yvv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dg4-Pl-Rfe"/>
+                <constraint firstAttribute="trailing" secondItem="UQL-qT-yvv" secondAttribute="trailing" id="KNV-GW-5f8"/>
+                <constraint firstItem="83V-nF-DMq" firstAttribute="top" secondItem="UQL-qT-yvv" secondAttribute="bottom" priority="750" constant="20" id="UGK-qO-yqr"/>
+                <constraint firstItem="5m8-kr-dS5" firstAttribute="top" secondItem="UQL-qT-yvv" secondAttribute="top" constant="-20" id="f73-pI-LXL"/>
+                <constraint firstItem="83V-nF-DMq" firstAttribute="top" secondItem="5m8-kr-dS5" secondAttribute="bottom" constant="8" id="g2e-OU-ICJ"/>
+                <constraint firstItem="5m8-kr-dS5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="gga-ML-Qbg"/>
+                <constraint firstItem="WYY-8s-TGn" firstAttribute="top" secondItem="83V-nF-DMq" secondAttribute="bottom" constant="25" id="iUE-qk-Ydm"/>
+                <constraint firstItem="5m8-kr-dS5" firstAttribute="top" secondItem="UQL-qT-yvv" secondAttribute="top" constant="100" id="j3m-TN-NAr"/>
+                <constraint firstItem="5m8-kr-dS5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kwB-f7-Sqb"/>
+                <constraint firstAttribute="trailing" secondItem="WYY-8s-TGn" secondAttribute="trailing" constant="40" id="shX-gq-63u"/>
+                <constraint firstAttribute="trailing" secondItem="5m8-kr-dS5" secondAttribute="trailing" id="vfl-jr-NO4"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="j3m-TN-NAr"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

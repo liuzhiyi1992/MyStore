@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="vqj-yo-yZB" customClass="MonthCardSectionHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="agB-aj-Jp0">
+                    <rect key="frame" x="0.0" y="0.0" width="324" height="30"/>
+                    <color key="backgroundColor" red="0.94117647409439087" green="0.94117647409439087" blue="0.94117647409439087" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="推荐场馆" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m0A-j5-Gib">
+                    <rect key="frame" x="138" y="8" width="48" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.3899999857" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="Z4s-Jq-382">
+                    <rect key="frame" x="20" y="15" width="98" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Q0r-R0-agt"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="k4o-jE-lau"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line.png" translatesAutoresizingMaskIntoConstraints="NO" id="M0R-Pw-Rmh">
+                    <rect key="frame" x="206" y="15" width="98" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="N6C-Gt-fa5"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="Zmh-VG-2Br"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zmh-VG-2Br"/>
+                        </mask>
+                    </variation>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Z4s-Jq-382" firstAttribute="leading" secondItem="m0A-j5-Gib" secondAttribute="leading" constant="-186" id="2ww-BS-aV4"/>
+                <constraint firstAttribute="trailing" secondItem="M0R-Pw-Rmh" secondAttribute="trailing" constant="20" id="7fK-B2-RwN"/>
+                <constraint firstAttribute="centerY" secondItem="m0A-j5-Gib" secondAttribute="centerY" id="FYv-ML-5mh"/>
+                <constraint firstAttribute="trailing" secondItem="agB-aj-Jp0" secondAttribute="trailing" id="Jmr-qe-xxE"/>
+                <constraint firstAttribute="bottom" secondItem="agB-aj-Jp0" secondAttribute="bottom" id="YcF-zo-Z5m"/>
+                <constraint firstItem="Z4s-Jq-382" firstAttribute="leading" secondItem="vqj-yo-yZB" secondAttribute="leading" constant="20" id="Ywd-0Z-R7q"/>
+                <constraint firstAttribute="centerY" secondItem="M0R-Pw-Rmh" secondAttribute="centerY" id="aup-Bk-2rK"/>
+                <constraint firstAttribute="centerY" secondItem="Z4s-Jq-382" secondAttribute="centerY" id="bVe-cZ-OxM"/>
+                <constraint firstItem="m0A-j5-Gib" firstAttribute="leading" secondItem="Z4s-Jq-382" secondAttribute="trailing" constant="20" id="d78-pV-tuK"/>
+                <constraint firstItem="agB-aj-Jp0" firstAttribute="leading" secondItem="vqj-yo-yZB" secondAttribute="leading" id="g34-OB-Dom"/>
+                <constraint firstItem="agB-aj-Jp0" firstAttribute="top" secondItem="vqj-yo-yZB" secondAttribute="top" id="gc5-CR-a2f"/>
+                <constraint firstItem="M0R-Pw-Rmh" firstAttribute="leading" secondItem="m0A-j5-Gib" secondAttribute="trailing" constant="20" id="r1q-rT-LID"/>
+                <constraint firstAttribute="centerX" secondItem="m0A-j5-Gib" secondAttribute="centerX" id="tjh-WM-cgn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="2ww-BS-aV4"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="titleLabel" destination="m0A-j5-Gib" id="uOJ-4N-Aca"/>
+            </connections>
+            <point key="canvasLocation" x="197" y="-140.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="line.png" width="1" height="1"/>
+    </resources>
+</document>

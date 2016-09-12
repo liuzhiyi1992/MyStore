@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SportNavigationTitleView">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button hidden="YES" opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTr-Jg-2ez" userLabel="leftButton1">
+                    <rect key="frame" x="0.0" y="-1" width="0.0" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="bJY-1T-W3o"/>
+                        <constraint firstAttribute="height" constant="44" id="vMU-gz-9Ke"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="back_button.png">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button hidden="YES" opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDD-TF-cWX" userLabel="leftButton2">
+                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="XjD-q7-vhW"/>
+                        <constraint firstAttribute="height" constant="44" id="qin-N6-1Sg"/>
+                    </constraints>
+                    <state key="normal" image="WebGoBackButton"/>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eDS-0s-dNO">
+                    <rect key="frame" x="93" y="0.0" width="129" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nbg-ky-UFp" userLabel="titleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="129" height="44"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.13333334028720856" green="0.13333334028720856" blue="0.13333334028720856" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Nbg-ky-UFp" secondAttribute="trailing" id="40Z-aa-H07"/>
+                        <constraint firstItem="Nbg-ky-UFp" firstAttribute="leading" secondItem="eDS-0s-dNO" secondAttribute="leading" id="Wr5-Ie-1Hm"/>
+                        <constraint firstItem="Nbg-ky-UFp" firstAttribute="top" secondItem="eDS-0s-dNO" secondAttribute="top" id="gDS-lN-ICb"/>
+                        <constraint firstAttribute="bottom" secondItem="Nbg-ky-UFp" secondAttribute="bottom" id="xNF-3x-y5U"/>
+                    </constraints>
+                </view>
+                <button hidden="YES" opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bg-iJ-zyF" userLabel="rightButton2">
+                    <rect key="frame" x="222" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="KxK-Uq-Uap"/>
+                        <constraint firstAttribute="height" constant="44" id="Tdx-CD-g0K"/>
+                    </constraints>
+                    <state key="normal" image="CollectIcon"/>
+                    <state key="selected" image="CollectSelectedIcon"/>
+                </button>
+                <button hidden="YES" opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ySu-Mo-RMQ" userLabel="rightButton1">
+                    <rect key="frame" x="266" y="0.0" width="49" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="49" id="3Va-Xh-Nko"/>
+                        <constraint firstAttribute="height" constant="44" id="yNB-g8-W83"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="4" maxY="0.0"/>
+                    <state key="normal" image="ShareIcon"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uDD-TF-cWX" firstAttribute="centerY" secondItem="LTr-Jg-2ez" secondAttribute="centerY" id="3zp-fL-2Ap"/>
+                <constraint firstItem="LTr-Jg-2ez" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9nb-0x-mS4"/>
+                <constraint firstItem="ySu-Mo-RMQ" firstAttribute="leading" secondItem="0bg-iJ-zyF" secondAttribute="trailing" id="ERr-8X-OaF"/>
+                <constraint firstItem="0bg-iJ-zyF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Jxp-OW-1ts"/>
+                <constraint firstItem="LTr-Jg-2ez" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="LIR-lz-ax2"/>
+                <constraint firstItem="eDS-0s-dNO" firstAttribute="leading" secondItem="uDD-TF-cWX" secondAttribute="trailing" priority="900" id="RwG-TV-Jhk"/>
+                <constraint firstItem="0bg-iJ-zyF" firstAttribute="leading" secondItem="eDS-0s-dNO" secondAttribute="trailing" priority="900" id="UfF-i9-IeK"/>
+                <constraint firstAttribute="bottom" secondItem="eDS-0s-dNO" secondAttribute="bottom" id="dhZ-09-KhM"/>
+                <constraint firstItem="eDS-0s-dNO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eEu-0q-LXF"/>
+                <constraint firstItem="uDD-TF-cWX" firstAttribute="leading" secondItem="LTr-Jg-2ez" secondAttribute="trailing" id="hly-eZ-J8s"/>
+                <constraint firstItem="ySu-Mo-RMQ" firstAttribute="centerY" secondItem="0bg-iJ-zyF" secondAttribute="centerY" id="ldN-JE-3na"/>
+                <constraint firstItem="eDS-0s-dNO" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pG7-yu-Aqq"/>
+                <constraint firstAttribute="trailing" secondItem="ySu-Mo-RMQ" secondAttribute="trailing" priority="999" id="uS3-C2-WWt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftButton1" destination="LTr-Jg-2ez" id="vLX-oA-HRb"/>
+                <outlet property="leftButton1Width" destination="bJY-1T-W3o" id="i9z-Qh-LBS"/>
+                <outlet property="leftButton2" destination="uDD-TF-cWX" id="7Lg-70-8XB"/>
+                <outlet property="leftButton2Width" destination="XjD-q7-vhW" id="QoB-MP-Fqo"/>
+                <outlet property="rightButton1" destination="ySu-Mo-RMQ" id="fqy-dB-jNV"/>
+                <outlet property="rightButton1Width" destination="3Va-Xh-Nko" id="EwO-Au-0Et"/>
+                <outlet property="rightButton2" destination="0bg-iJ-zyF" id="BRs-qA-DkK"/>
+                <outlet property="rightButton2Width" destination="KxK-Uq-Uap" id="ptH-Bm-1YC"/>
+                <outlet property="titleLabel" destination="Nbg-ky-UFp" id="1kQ-Rm-dQR"/>
+                <outlet property="titleView" destination="eDS-0s-dNO" id="zi8-jt-ng6"/>
+            </connections>
+            <point key="canvasLocation" x="288.5" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CollectIcon" width="21" height="21"/>
+        <image name="CollectSelectedIcon" width="21" height="21"/>
+        <image name="ShareIcon" width="21" height="21"/>
+        <image name="WebGoBackButton" width="20" height="20"/>
+        <image name="back_button.png" width="25" height="25"/>
+    </resources>
+</document>
