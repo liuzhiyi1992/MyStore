@@ -201,6 +201,7 @@
         
         //signal监听
         __weak CoachIntroductionController *weakSelf = self;
+        
         dispatch_async(weakSelf.updateQueue, ^{
             dispatch_time_t timeout = dispatch_time(DISPATCH_TIME_NOW, 40 * NSEC_PER_SEC);
             if (weakSelf.updateSemaphore == nil) {
