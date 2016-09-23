@@ -549,6 +549,7 @@
     
     [UIView animateWithDuration:0.3 animations:^{
     
+        //navBar动作
         [self punchTheClockButtonUpdateConstraintIsHidden:YES];
         self.isOpen = YES;
         [self dataTableViewDidScroll];
