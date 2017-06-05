@@ -1,1 +1,0 @@
-../../../MWPhotoBrowserForSport/Pod/Classes/MWZoomingScrollView.h

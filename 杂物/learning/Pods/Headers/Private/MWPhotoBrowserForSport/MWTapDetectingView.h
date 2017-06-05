@@ -1,1 +1,0 @@
-../../../MWPhotoBrowserForSport/Pod/Classes/MWTapDetectingView.h

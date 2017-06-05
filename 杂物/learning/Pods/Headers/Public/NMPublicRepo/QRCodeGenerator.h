@@ -1,1 +1,0 @@
-../../../NMPublicRepo/NMPublic/Util/libqrencode/QRCodeGenerator.h

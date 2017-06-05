@@ -1,1 +1,0 @@
-../../../../NMPublicRepo/NMPublic/NMSNS/TencentOpenAPI3.1.0/TencentOpenAPI.framework/Headers/QQApiInterface.h
